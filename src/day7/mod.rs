@@ -1,7 +1,6 @@
 use std::{
     cell::RefCell,
-    cmp::Reverse,
-    collections::{BinaryHeap, HashMap},
+    collections::HashMap,
     fs::File,
     io::{BufRead, BufReader},
     path::PathBuf,
