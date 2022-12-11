@@ -101,17 +101,18 @@ impl Problem for Day10 {
 
             // Process
             let new_cycle = cycle + inst.runtime();
-            for n in cycle..(new_cycle) {
-                let pixel = ((n - 1) as i32) % 40;
-                if low <= pixel && pixel <= high {
-                    print!("#");
-                } else {
-                    print!(".")
-                }
-                if linebreaks.contains(&n) {
-                    print!("\n");
-                }
-            }
+
+            // for n in cycle..(new_cycle) {
+            //     let pixel = ((n - 1) as i32) % 40;
+            //     if low <= pixel && pixel <= high {
+            //         print!("#");
+            //     } else {
+            //         print!(".")
+            //     }
+            //     if linebreaks.contains(&n) {
+            //         print!("\n");
+            //     }
+            // }
 
             // Process inst
             cycle = new_cycle;
